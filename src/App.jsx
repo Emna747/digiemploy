@@ -1,5 +1,9 @@
 import React from "react";
-
+import FacebookIcon from "@mui/icons-material/Facebook";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import Diversity1Icon from "@mui/icons-material/Diversity1";
+//import CopyrightIcon from "@mui/icons-material/Copyright";
 import {
   Typography,
   AppBar,
@@ -13,7 +17,7 @@ import {
   CardMedia,
   Grid,
 } from "@material-ui/core";
-import Diversity1Icon from "@mui/icons-material/Diversity1";
+
 import useStyles from "./styles";
 import database from "./database";
 function jobcard(props) {
@@ -35,26 +39,17 @@ function App() {
       <AppBar position="relative">
         <Toolbar>
           <Diversity1Icon className={classes.icon} />
-          <Typography variant="h5">DigiEmploy</Typography>
-        </Toolbar>
-        <Button
-          variant="contained"
-          color="primary"
-          size="medium"
-          className={classes.button}
-        >
+          <Typography variant="h4" className={classes.navigationBar}>DigiEmploy</Typography>
+        
+        <Button variant="outlined" size="medium" className={classes.button}>
           {" "}
           Post a Job
         </Button>
-        <Button
-          variant="contained"
-          color="primary"
-          size="medium"
-          className={classes.button}
-        >
+        <Button variant="outlined" size="medium" className={classes.button}>
           {" "}
-          Upload Resume
+          Sign In
         </Button>
+        </Toolbar>
       </AppBar>
       <main>
         <div className={classes.container}>
@@ -73,14 +68,13 @@ function App() {
               color="textSecondary"
               paragraph
             >
-              The latest jobs in the Fintech industry from world's best unicorn
-              startups.
+             Find The latest Jobs in the Fintech Industry from The World's Best Unicorn
+              Startups.
             </Typography>
           </Container>
         </div>
         <Container className={classes.cardGrid} maxWidth="md">
           <Grid container spacing={3}>
-            {database.map(jobcard)}
             <Grid item xs={12} sm={6} md={4}>
               <Card className={classes.card}>
                 <CardMedia
@@ -89,14 +83,15 @@ function App() {
                   title="Image title"
                 />
                 <CardContent className={classes.cardContent}>
+                  {database.map(jobcard)}
                   <Typography gutterBottom variant="h4"></Typography>
                 </CardContent>
                 <CardActions>
                   {" "}
-                  <Button size="small" color="primary">
+                  <Button size="small" color="primary" align="center">
                     Apply Now
                   </Button>
-                  <Button size="small" color="primary">
+                  <Button size="small" color="primary" align="center">
                     Save
                   </Button>
                 </CardActions>
@@ -105,17 +100,21 @@ function App() {
           </Grid>
         </Container>
       </main>
+
       <footer className={classes.footer}>
-        <Typography variant="h4" align="center" gutterBottom>
+        <Typography variant="h6" align="center" gutterBottom>
           {" "}
-          Follow us on social media
+          Follow Us On Social Media For More Updates <br />{" "}
+          <FacebookIcon color="action" /> <InstagramIcon color="action" />{" "}
+          <LinkedInIcon color="action" />
         </Typography>
-        <Typography variant="subtitle1" align="center" color="textSecondary">
+        <Typography variant="subtitle2" align="center" color="textSecondary">
           {" "}
-          Made with love by Emna in 2022{" "}
+          Made with Love by Emna in 2022
         </Typography>
       </footer>
     </div>
   );
 }
+
 export default App;
