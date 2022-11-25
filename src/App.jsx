@@ -85,10 +85,20 @@ function App() {
 
                   <CardActions>
                     {" "}
-                    <Button size="small" color="primary" align="center">
+                    <Button
+                      className={classes.buttonGrid}
+                      size="small"
+                      color="primary"
+                      align="center"
+                    >
                       Apply Now
                     </Button>
-                    <Button size="small" color="primary" align="center">
+                    <Button
+                      className={classes.buttonGrid}
+                      size="small"
+                      color="primary"
+                      align="center"
+                    >
                       Save
                     </Button>
                   </CardActions>

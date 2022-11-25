@@ -17,15 +17,17 @@ const useStyles = makeStyles((theme) => ({
     color: "#fafafa",
   },
   cardGrid: { padding: "28px 0" },
-  card: { height: "100%", display: "flex", flexDirection: "columns", border: "5px green solid" },
+  card: { height: "100%", display: "flex", flexDirection: "columns" },
   cardMedia: { paddingTop: "56.25%" },
   cardContent: {
     flexGrow: "1",
-    border: "5px red solid"
   },
   footer: {
     backgroundColor: theme.palette.background.paper,
     padding: "5px 0",
+  },
+  buttonGrid: {
+    color: "red",
   },
 }));
 export default useStyles;
