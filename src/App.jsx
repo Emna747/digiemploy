@@ -1,4 +1,5 @@
 import React from "react";
+import Jobcard from "./Jobcard";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
@@ -19,15 +20,17 @@ import {
 
 import useStyles from "./styles";
 import database from "./database";
-function jobcard(props) {
+
+function createCard(detail) {
   return (
-    <div>
-      <h3>{props.JobTitle}</h3>
-      <h6>{props.Department}</h6>
-      <h6>{props.Location}</h6>
-      <p>{props.Description}</p>
-      <p>{props.Salary}</p>
-    </div>
+    <Jobcard
+      key={detail.id}
+      jobtitle={detail.JobTitle}
+      jobdepartment={detail.Department}
+      joblocation={detail.Location}
+      jobsummary={detail.Description}
+      jobrevenue={detail.Salary}
+    />
   );
 }
 function App() {
@@ -76,10 +79,11 @@ function App() {
         </div>
         <Container className={classes.cardGrid} maxWidth="md">
           <Grid container spacing={2}>
-            {database.map((jobcard) => (
-              <Grid item key={jobcard} xs={12} sm={6} md={4}>
+            {database.map((card) => (
+              <Grid item key={card.id} xs={12} sm={6} md={4}>
                 <Card className={classes.card}>
                   <CardContent className={classes.cardContent}>
+                    <Jobcard> {database.map(createCard)}</Jobcard>
                     <Typography gutterBottom variant="h4"></Typography>
                   </CardContent>
 
