@@ -1,5 +1,5 @@
 import React from "react";
-import Jobcard from "./Jobcard";
+//import Jobcard from "./Jobcard";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
@@ -21,18 +21,7 @@ import {
 import useStyles from "./styles";
 import database from "./database";
 
-function createCard(detail) {
-  return (
-    <Jobcard
-      key={detail.id}
-      jobtitle={detail.JobTitle}
-      jobdepartment={detail.Department}
-      joblocation={detail.Location}
-      jobsummary={detail.Description}
-      jobrevenue={detail.Salary}
-    />
-  );
-}
+// {database.map(createCard)}
 function App() {
   const classes = useStyles();
   return (
@@ -79,36 +68,42 @@ function App() {
         </div>
         <Container className={classes.cardGrid} maxWidth="md">
           <Grid container spacing={2}>
-            {database.map((card) => (
-              <Grid item key={card.id} xs={12} sm={6} md={4}>
-                <Card className={classes.card}>
-                  <CardContent className={classes.cardContent}>
-                    <Jobcard> {database.map(createCard)}</Jobcard>
-                    <Typography gutterBottom variant="h4"></Typography>
-                  </CardContent>
-
-                  <CardActions>
+            {database.map((card) => {
+              return (
+                <Grid item key={card.id} xs={12} sm={6} md={4}>
+                  <Card className={classes.card}>
                     {" "}
-                    <Button
-                      className={classes.buttonGrid}
-                      size="small"
-                      color="primary"
-                      align="center"
-                    >
-                      Apply Now
-                    </Button>
-                    <Button
-                      className={classes.buttonGrid}
-                      size="small"
-                      color="primary"
-                      align="center"
-                    >
-                      Save
-                    </Button>
-                  </CardActions>
-                </Card>
-              </Grid>
-            ))}
+                    <CardContent className={classes.cardContent}>
+                      <h2>{card.JobTitle}</h2>
+                      <h3>{card.Location}</h3>
+                      <h4>{card.Department}</h4>
+                      <h5>{card.Salary}</h5>
+                      <h6>{card.Description}</h6>
+                      <Typography gutterBottom variant="h4"></Typography>
+                    </CardContent>
+                    <CardActions>
+                      {" "}
+                      <Button
+                        className={classes.buttonGrid}
+                        size="small"
+                        color="primary"
+                        align="center"
+                      >
+                        Apply Now
+                      </Button>
+                      <Button
+                        className={classes.buttonGrid}
+                        size="small"
+                        color="primary"
+                        align="center"
+                      >
+                        Save
+                      </Button>
+                    </CardActions>
+                  </Card>
+                </Grid>
+              );
+            })}
           </Grid>
         </Container>
       </main>
