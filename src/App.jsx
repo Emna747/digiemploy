@@ -4,9 +4,10 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import Diversity1Icon from "@mui/icons-material/Diversity1";
-import BusinessCenterRoundedIcon from '@mui/icons-material/BusinessCenterRounded';
+import BusinessCenterRoundedIcon from "@mui/icons-material/BusinessCenterRounded";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
-import PaidRoundedIcon from '@mui/icons-material/PaidRounded';
+import PaidRoundedIcon from "@mui/icons-material/PaidRounded";
+import PeopleIcon from "@mui/icons-material/People";
 //import CopyrightIcon from "@mui/icons-material/Copyright";
 import {
   Typography,
@@ -89,12 +90,14 @@ function App() {
                         {card.Location}
                       </h3>
                       <h4 className={classes.jobdetails}>
-                      <PaidRoundedIcon className={classes.icons} />  {card.Salary}
+                        <PaidRoundedIcon className={classes.icons} />{" "}
+                        {card.Salary}
                       </h4>
                       <h4 className={classes.jobdetails}>
-                        Department: {card.Department}
+                        <PeopleIcon className={classes.icons} /> Department of{" "}
+                        {card.Department}
                       </h4>
-                     
+
                       <h6> About The Role: {card.Description}</h6>
                       <Typography gutterBottom variant="h4"></Typography>
                     </CardContent>
@@ -102,15 +105,15 @@ function App() {
                       {" "}
                       <Button
                         className={classes.buttonGrid}
-                        size="small"
+                        size="medium"
                         color="primary"
                       >
                         Apply Now
                       </Button>
                       <Button
                         className={classes.buttonGrid}
-                        size="small"
-                        color="inherit"
+                        size="medium"
+                        color="primary"
                       >
                         Save
                       </Button>

@@ -12,18 +12,17 @@ const useStyles = makeStyles((theme) => ({
     marginRight: "20px",
   },
   icons: {
-    marginRight: "5px",
+    marginRight: "9px",
   },
   button: {
     marginLeft: "10px",
     color: "#fafafa",
   },
-  cardGrid: { padding: "28px 0" },
+  cardGrid: { padding: "28px 0", marginBottom: "5rem" },
   card: { height: "100%", display: "flex", flexDirection: "column" },
   cardMedia: { paddingTop: "56.25%" },
   cardContent: {
     flexGrow: "1",
-
     textAlign: "center",
   },
   jobtitle: { color: "#1b3764", marginBottom: "50px" },
@@ -34,6 +33,7 @@ const useStyles = makeStyles((theme) => ({
   },
   buttonGrid: {
     color: "#1b3764",
+    marginLeft: "3.8rem",
   },
 }));
 export default useStyles;
