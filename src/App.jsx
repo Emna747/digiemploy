@@ -4,6 +4,9 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import Diversity1Icon from "@mui/icons-material/Diversity1";
+import BusinessCenterRoundedIcon from '@mui/icons-material/BusinessCenterRounded';
+import LocationOnIcon from "@mui/icons-material/LocationOn";
+import PaidRoundedIcon from '@mui/icons-material/PaidRounded';
 //import CopyrightIcon from "@mui/icons-material/Copyright";
 import {
   Typography,
@@ -74,11 +77,25 @@ function App() {
                   <Card className={classes.card}>
                     {" "}
                     <CardContent className={classes.cardContent}>
-                      <h2>{card.JobTitle}</h2>
-                      <h3>{card.Location}</h3>
-                      <h4>{card.Department}</h4>
-                      <h5>{card.Salary}</h5>
-                      <h6>{card.Description}</h6>
+                      <h2 className={classes.jobtitle}>{card.JobTitle}</h2>
+                      <h3 className={classes.jobdetails}>
+                        {" "}
+                        <BusinessCenterRoundedIcon className={classes.icons} />
+                        {card.company}
+                      </h3>
+                      <h3 className={classes.jobdetails}>
+                        {" "}
+                        <LocationOnIcon className={classes.icons} />
+                        {card.Location}
+                      </h3>
+                      <h4 className={classes.jobdetails}>
+                      <PaidRoundedIcon className={classes.icons} />  {card.Salary}
+                      </h4>
+                      <h4 className={classes.jobdetails}>
+                        Department: {card.Department}
+                      </h4>
+                     
+                      <h6> About The Role: {card.Description}</h6>
                       <Typography gutterBottom variant="h4"></Typography>
                     </CardContent>
                     <CardActions>
@@ -87,15 +104,13 @@ function App() {
                         className={classes.buttonGrid}
                         size="small"
                         color="primary"
-                        align="center"
                       >
                         Apply Now
                       </Button>
                       <Button
                         className={classes.buttonGrid}
                         size="small"
-                        color="primary"
-                        align="center"
+                        color="inherit"
                       >
                         Save
                       </Button>

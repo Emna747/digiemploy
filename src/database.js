@@ -4,6 +4,7 @@ const database = [
     JobTitle: "Product Engineer(Java)",
     Department: "Engineering",
     Location: "London",
+    company: "Wise Ltd",
     Description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo commodi et quos! Saepe error molestiae quae voluptates, laudantium dolore!",
     Salary: "3500 USD",
@@ -13,6 +14,7 @@ const database = [
     JobTitle: "Payment Operations Manager",
     Department: "Operations",
     Location: "London",
+    company: "Spotify",
     Description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo commodi et quos! Saepe error molestiae quae voluptates, laudantium dolore!",
     Salary: "2900 USD",
@@ -22,6 +24,7 @@ const database = [
     JobTitle: "Senior Product Analytics Manager",
     Department: "Analytics",
     Location: "Chicago USA",
+    company: "Google Inc",
     Description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo commodi et quos! Saepe error molestiae quae voluptates, laudantium dolore!",
     Salary: "5000 USD",
@@ -31,6 +34,7 @@ const database = [
     JobTitle: "Implementation Manager",
     Department: "Business Development",
     Location: "Tokyo",
+    company: "PayPal",
     Description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo commodi et quos! Saepe error molestiae quae voluptates, laudantium dolore!",
     Salary: "3500 USD",
@@ -40,6 +44,7 @@ const database = [
     JobTitle: "Public Relations Manager",
     Department: "Communications",
     Location: "Abu Dhabi",
+    company: "Air France",
     Description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo commodi et quos! Saepe error molestiae quae voluptates, laudantium dolore!",
     Salary: "2975 USD",
@@ -49,6 +54,7 @@ const database = [
     JobTitle: "Head of Internal Audits",
     Department: "Finance",
     Location: "London",
+    company: "Samsung",
     Description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo commodi et quos! Saepe error molestiae quae voluptates, laudantium dolore!",
     Salary: "4500 USD",
@@ -58,6 +64,7 @@ const database = [
     JobTitle: "Privacy Advisor",
     Department: "Legal",
     Location: "Los Angelos USA",
+    company: "Revolut",
     Description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo commodi et quos! Saepe error molestiae quae voluptates, laudantium dolore!",
     Salary: "3750 USD",
@@ -67,6 +74,7 @@ const database = [
     JobTitle: "Senior Security Analyst",
     Department: "Security",
     Location: "Oslo",
+    company: "Western Union",
     Description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo commodi et quos! Saepe error molestiae quae voluptates, laudantium dolore!",
     Salary: "8000 USD",
@@ -76,6 +84,7 @@ const database = [
     JobTitle: "Senior Backend Engineer",
     Department: "Engineering",
     Location: "Paris",
+    company: "BNP Paribas",
     Description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo commodi et quos! Saepe error molestiae quae voluptates, laudantium dolore!",
     Salary: "5000 USD",
@@ -85,6 +94,7 @@ const database = [
     JobTitle: "Product Analyst",
     Department: "Analytics",
     Location: "Geneva",
+    company: "TransferWise",
     Description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo commodi et quos! Saepe error molestiae quae voluptates, laudantium dolore!",
     Salary: "3270 USD",
@@ -94,6 +104,7 @@ const database = [
     JobTitle: "Network Architect",
     Department: "Security",
     Location: "New Delhi",
+    company: "Louis Vuitton",
     Description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo commodi et quos! Saepe error molestiae quae voluptates, laudantium dolore!",
     Salary: "3400 USD",
@@ -103,6 +114,7 @@ const database = [
     JobTitle: "Engineering Lead",
     Department: "Engineering",
     Location: "Tokyo",
+    company: "PipeDrive",
     Description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo commodi et quos! Saepe error molestiae quae voluptates, laudantium dolore!",
     Salary: "4500 USD",
@@ -112,6 +124,7 @@ const database = [
     JobTitle: "Lead Product Analyst",
     Department: "Analytics",
     Location: "NewYork USA",
+    company: "Walt Disney",
     Description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo commodi et quos! Saepe error molestiae quae voluptates, laudantium dolore!",
     Salary: "8000 USD",
@@ -121,6 +134,7 @@ const database = [
     JobTitle: "Account Manager",
     Department: "Business Development",
     Location: "Tunis",
+    company: "Tunisair",
     Description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo commodi et quos! Saepe error molestiae quae voluptates, laudantium dolore!",
     Salary: "3450 USD",
@@ -130,6 +144,7 @@ const database = [
     JobTitle: "Prudential Associate Controller",
     Department: "Finance",
     Location: "Helsinki",
+    company: "Nordea Bank",
     Description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo commodi et quos! Saepe error molestiae quae voluptates, laudantium dolore!",
     Salary: "2980 USD",
@@ -139,6 +154,7 @@ const database = [
     JobTitle: "Payment Specialist",
     Department: "Operations",
     Location: "Oslo",
+    company: "SwedBank",
     Description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo commodi et quos! Saepe error molestiae quae voluptates, laudantium dolore!",
     Salary: "2200 USD",
@@ -149,6 +165,7 @@ const database = [
     JobTitle: "Analytics Engineer",
     Department: "Analytics",
     Location: "Singapore",
+    company: "Wise Ltd",
     Description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo commodi et quos! Saepe error molestiae quae voluptates, laudantium dolore!",
     Salary: "3500 USD",
@@ -158,6 +175,7 @@ const database = [
     JobTitle: "Frontend Engineer for REACT JS",
     Department: "Engineering",
     Location: "Amsterdam",
+    company: "BUNQ",
     Description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo commodi et quos! Saepe error molestiae quae voluptates, laudantium dolore!",
     Salary: "9000 USD",

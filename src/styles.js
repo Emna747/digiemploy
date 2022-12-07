@@ -11,23 +11,29 @@ const useStyles = makeStyles((theme) => ({
   icon: {
     marginRight: "20px",
   },
-
+  icons: {
+    marginRight: "5px",
+  },
   button: {
     marginLeft: "10px",
     color: "#fafafa",
   },
   cardGrid: { padding: "28px 0" },
-  card: { height: "100%", display: "flex", flexDirection: "columns" },
+  card: { height: "100%", display: "flex", flexDirection: "column" },
   cardMedia: { paddingTop: "56.25%" },
   cardContent: {
     flexGrow: "1",
+
+    textAlign: "center",
   },
+  jobtitle: { color: "#1b3764", marginBottom: "50px" },
+  jobdetails: { textAlign: "left" },
   footer: {
     backgroundColor: theme.palette.background.paper,
     padding: "5px 0",
   },
   buttonGrid: {
-    color: "green",
+    color: "#1b3764",
   },
 }));
 export default useStyles;
