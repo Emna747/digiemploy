@@ -1,5 +1,4 @@
 import React from "react";
-//import Jobcard from "./Jobcard";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
@@ -8,7 +7,6 @@ import BusinessCenterRoundedIcon from "@mui/icons-material/BusinessCenterRounded
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import PaidRoundedIcon from "@mui/icons-material/PaidRounded";
 import PeopleIcon from "@mui/icons-material/People";
-//import CopyrightIcon from "@mui/icons-material/Copyright";
 import {
   Typography,
   AppBar,
@@ -21,10 +19,9 @@ import {
   CardContent,
   Grid,
 } from "@material-ui/core";
-
+import { Link } from "react-router-dom";
 import useStyles from "./styles";
 import database from "./database";
-
 // {database.map(createCard)}
 function App() {
   const classes = useStyles();
@@ -42,7 +39,14 @@ function App() {
             {" "}
             Post a Job
           </Button>
-          <Button variant="outlined" size="medium" className={classes.button}>
+          <Button
+            variant="outlined"
+            size="medium"
+            className={classes.button}
+            component={Link}
+            onClick={() => {}}
+            to={"/signin"}
+          >
             {" "}
             Sign In
           </Button>
@@ -125,7 +129,6 @@ function App() {
           </Grid>
         </Container>
       </main>
-
       <footer className={classes.footer}>
         <Typography variant="h6" align="center" gutterBottom>
           {" "}
