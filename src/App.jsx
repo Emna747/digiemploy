@@ -7,6 +7,7 @@ import BusinessCenterRoundedIcon from "@mui/icons-material/BusinessCenterRounded
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import PaidRoundedIcon from "@mui/icons-material/PaidRounded";
 import PeopleIcon from "@mui/icons-material/People";
+import Popover from "./Popover";
 import {
   Typography,
   AppBar,
@@ -19,12 +20,13 @@ import {
   CardContent,
   Grid,
 } from "@material-ui/core";
-import { Link } from "react-router-dom";
+
 import useStyles from "./styles";
 import database from "./database";
-// {database.map(createCard)}
+import SignIn from "./SignIn";
 function App() {
   const classes = useStyles();
+
   return (
     <div>
       <CssBaseline />
@@ -34,21 +36,10 @@ function App() {
           <Typography variant="h4" className={classes.navigationBar}>
             DigiEmploy
           </Typography>
-
+          <Popover />
           <Button variant="outlined" size="medium" className={classes.button}>
             {" "}
-            Post a Job
-          </Button>
-          <Button
-            variant="outlined"
-            size="medium"
-            className={classes.button}
-            component={Link}
-            onClick={() => {}}
-            to={"/signin"}
-          >
-            {" "}
-            Sign In
+            Sign in{" "}
           </Button>
         </Toolbar>
       </AppBar>
@@ -63,6 +54,7 @@ function App() {
             >
               DigiEmploy
             </Typography>
+
             <Typography
               variant="h5"
               align="center"
@@ -129,6 +121,7 @@ function App() {
           </Grid>
         </Container>
       </main>
+      <SignIn />
       <footer className={classes.footer}>
         <Typography variant="h6" align="center" gutterBottom>
           {" "}

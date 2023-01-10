@@ -18,6 +18,7 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: "10px",
     color: "#fafafa",
   },
+ 
   cardGrid: { padding: "28px 0", marginBottom: "5rem" },
   card: { height: "100%", display: "flex", flexDirection: "column" },
   cardMedia: { paddingTop: "56.25%" },
