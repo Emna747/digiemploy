@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.js": "/Emna747/digiemploy.git/static/js/main.2a3b56af.js",
-    "index.html": "/Emna747/digiemploy.git/index.html",
-    "main.2a3b56af.js.map": "/Emna747/digiemploy.git/static/js/main.2a3b56af.js.map"
+    "main.js": "/digiemploy/static/js/main.2a3b56af.js",
+    "index.html": "/digiemploy/index.html",
+    "main.2a3b56af.js.map": "/digiemploy/static/js/main.2a3b56af.js.map"
   },
   "entrypoints": [
     "static/js/main.2a3b56af.js"
