@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.js": "/digiemploywebsite/static/js/main.4d250534.js",
-    "index.html": "/digiemploywebsite/index.html",
-    "main.4d250534.js.map": "/digiemploywebsite/static/js/main.4d250534.js.map"
+    "main.js": "/digiemploy/static/js/main.4d250534.js",
+    "index.html": "/digiemploy/index.html",
+    "main.4d250534.js.map": "/digiemploy/static/js/main.4d250534.js.map"
   },
   "entrypoints": [
     "static/js/main.4d250534.js"
