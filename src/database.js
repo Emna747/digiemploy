@@ -1,7 +1,7 @@
 const database = [
   {
     id: 123,
-    JobTitle: "Product Engineer(Java)",
+    JobTitle: "Product Engineer (Java)",
     Department: "Engineering",
     Location: "London - UK",
     company: "Wise Ltd",
@@ -11,7 +11,7 @@ const database = [
   },
   {
     id: 456,
-    JobTitle: "Payment Operations Manager",
+    JobTitle: "Payment Ops Manager",
     Department: "Operations",
     Location: "London - UK",
     company: "Spotify",
@@ -21,7 +21,7 @@ const database = [
   },
   {
     id: 789,
-    JobTitle: "Senior Product Analytics Manager",
+    JobTitle: "Senior Product Manager",
     Department: "Analytics",
     Location: "Chicago - USA",
     company: "Google Inc",
@@ -32,7 +32,7 @@ const database = [
   {
     id: 1011,
     JobTitle: "Implementation Manager",
-    Department: "Business Development",
+    Department: "BIZ Development",
     Location: "Tokyo - JPN",
     company: "PayPal",
     Description:
@@ -132,7 +132,7 @@ const database = [
   {
     id: 1996,
     JobTitle: "Account Manager",
-    Department: "Business Development",
+    Department: "BIZ Development",
     Location: "Tunis - TUN",
     company: "Tunisair",
     Description:
@@ -141,7 +141,7 @@ const database = [
   },
   {
     id: 2912,
-    JobTitle: "Prudential Associate Controller",
+    JobTitle: "Prudential  Controller",
     Department: "Finance",
     Location: "Helsinki - FIN",
     company: "Nordea Bank",
@@ -172,7 +172,7 @@ const database = [
   },
   {
     id: 1993,
-    JobTitle: "Frontend Engineer for REACT JS",
+    JobTitle: "Frontend Engineer REACT",
     Department: "Engineering",
     Location: "Amsterdam - NLD",
     company: "BUNQ",

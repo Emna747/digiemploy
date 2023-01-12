@@ -7,6 +7,9 @@ import BusinessCenterRoundedIcon from "@mui/icons-material/BusinessCenterRounded
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import PaidRoundedIcon from "@mui/icons-material/PaidRounded";
 import PeopleIcon from "@mui/icons-material/People";
+
+import Link from "@mui/material/Link";
+
 import Popover from "./Popover";
 import {
   Typography,
@@ -23,7 +26,7 @@ import {
 
 import useStyles from "./styles";
 import database from "./database";
-import SignIn from "./SignIn";
+
 function App() {
   const classes = useStyles();
 
@@ -31,18 +34,39 @@ function App() {
     <div>
       <CssBaseline />
       <AppBar position="relative">
-        <Toolbar>
-          <Diversity1Icon className={classes.icon} />
-          <Typography variant="h4" className={classes.navigationBar}>
-            DigiEmploy
-          </Typography>
-          <Popover />
-          <Button variant="outlined" size="medium" className={classes.button}>
-            {" "}
-            Sign in{" "}
-          </Button>
+        <Toolbar className={classes.navigationBar}>
+          <div className={classes.sectionone}>
+            <Diversity1Icon className={classes.icon} />
+            <Typography variant="h4">DigiEmploy</Typography>{" "}
+          </div>
+          <div className={classes.sectiontwo}>
+            <Popover />
+            <Button variant="contained">
+              {" "}
+              <Link
+                color="textPrimary"
+                href="https://www.technologyreview.com/"
+                target="_blank"
+                underline="none"
+              >
+                Latest News in Tech
+              </Link>{" "}
+            </Button>
+            {/* should add the routing to lead to blank new page for signing in component*/}
+            <Button size="medium" disabled variant="solid">
+              <Link
+                href="/signin"
+                target="_blank"
+                underline="none"
+                color="textPrimary"
+              >
+                Log In
+              </Link>
+            </Button>
+          </div>
         </Toolbar>
       </AppBar>
+
       <main>
         <div className={classes.container}>
           <Container maxWidth="sm">
@@ -94,7 +118,10 @@ function App() {
                         {card.Department}
                       </h4>
 
-                      <h6> About The Role: {card.Description}</h6>
+                      <h6 className={classes.jobdetail}>
+                        {" "}
+                        About The Role: {card.Description}
+                      </h6>
                       <Typography gutterBottom variant="h4"></Typography>
                     </CardContent>
                     <CardActions>
@@ -121,7 +148,7 @@ function App() {
           </Grid>
         </Container>
       </main>
-      <SignIn />
+
       <footer className={classes.footer}>
         <Typography variant="h6" align="center" gutterBottom>
           {" "}

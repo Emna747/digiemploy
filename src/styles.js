@@ -6,19 +6,22 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(8, 0, 10),
   },
   navigationBar: {
-    marginRight: "47rem",
+    display: "flex",
+    justifyContent: "space-around",
   },
-  icon: {
-    marginRight: "20px",
+  sectionone: {
+    display: "flex",
+  },
+  sectiontwo: {
+    display: "flex",
+    gap: "10px",
   },
   icons: {
-    marginRight: "9px",
+    marginRight: "11px",
   },
-  button: {
-    marginLeft: "10px",
-    color: "#fafafa",
+  icon: {
+    marginRight: "15px",
   },
- 
   cardGrid: { padding: "28px 0", marginBottom: "5rem" },
   card: { height: "100%", display: "flex", flexDirection: "column" },
   cardMedia: { paddingTop: "56.25%" },
@@ -26,7 +29,7 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: "1",
     textAlign: "center",
   },
-  jobtitle: { color: "#1b3764", marginBottom: "50px" },
+  jobtitle: { color: "#1b3764", marginBottom: "2rem" },
   jobdetails: { textAlign: "left" },
   footer: {
     backgroundColor: theme.palette.background.paper,
@@ -35,6 +38,10 @@ const useStyles = makeStyles((theme) => ({
   buttonGrid: {
     color: "#1b3764",
     marginLeft: "3.8rem",
+  },
+  jobdetail: {
+    borderTop: "2px solid black",
+    paddingTop: "11px",
   },
 }));
 export default useStyles;
